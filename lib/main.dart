@@ -20,6 +20,9 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
+      routes: {
+        "new_page":(context)=>NewRoute(),
+      },
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -98,6 +101,19 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.display1,
             ),
+            FlatButton(
+              child: Text("open new route"),
+              textColor: Colors.blue,
+              onPressed: (){
+                /*Navigator.push(context, new MaterialPageRoute(
+                  builder: (context){
+                    return new NewRoute();
+                  }
+                ));*/
+                Navigator.of(context).pushNamed("new_page",arguments: "hi");
+//                Navigator.pushNamed(context, "new_page");
+              },
+            )
           ],
         ),
       ),
@@ -108,4 +124,21 @@ class _MyHomePageState extends State<MyHomePage> {
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
+}
+
+class NewRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    String args = ModalRoute.of(context).settings.arguments;
+    // TODO: implement build
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("New Route"),
+      ),
+      body: Center(
+        child: Text(args+",This is new route"),
+      ),
+    );
+  }
+
 }
