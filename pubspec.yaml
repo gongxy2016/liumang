@@ -25,6 +25,8 @@ dependencies:
   cupertino_icons: ^0.1.2
   url_launcher: ^5.1.2
   json_serializable: ^3.0.0
+  flutter_webview_plugin: ^0.3.7
+  date_format: ^1.0.6
 
 dev_dependencies:
   flutter_test:
@@ -42,10 +44,29 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
+
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
+  assets:
+  # 加载页面图片资源
+  - imgs/add_friend.png
+  - imgs/code.png
+  - imgs/contacts_fill.png
+  - imgs/contacts_line.png
+  - imgs/groupchat.png
+  - imgs/loading.png
+  - imgs/me_clear.png
+  - imgs/me_file.png
+  - imgs/me_friends.png
+  - imgs/me_message.png
+  - imgs/me_photo.png
+  - imgs/me_service.png
+  - imgs/message_pressed.png
+  - imgs/profile_pressed.png
+  - imgs/public.png
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
