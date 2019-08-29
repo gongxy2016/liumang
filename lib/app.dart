@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import './chat/message_page.dart';
+import './contacts/contacts.dart';
+import './personal/personal.dart';
 
 class App extends StatefulWidget {
   @override

@@ -69,11 +69,11 @@ class SearchState extends State<Search> {
                 Container(
                   alignment: Alignment.centerLeft,
                   height: 45.0,
-                  margin: const EdgeInsets.only(left: 50.0,right: 10.0),
+                  margin: const EdgeInsets.only(left: 50.0, right: 10.0),
                   //搜索框底部边框
                   decoration: BoxDecoration(
                     border: Border(
-                      bottom: BorderSide(width: 1.0,color:Colors.green),
+                      bottom: BorderSide(width: 1.0, color: Colors.green),
                     ),
                   ),
                   child: Row(
@@ -88,20 +88,58 @@ class SearchState extends State<Search> {
                             color: Colors.black,
                             fontSize: 16.0,
                           ),
-                          onChanged: (String text){},
+                          onChanged: (String text) {},
                           decoration: InputDecoration(
-                            hintText: '搜索',border: InputBorder.none,
+                            hintText: '搜索',
+                            border: InputBorder.none,
                           ),
                         ),
                       ),
                       //添加麦克风图标
-
+                      Container(
+                        margin: const EdgeInsets.only(right: 10.0),
+                        child: Icon(
+                          Icons.mic,
+                          color: Color(0xffaaaaaa),
+                        ),
+                      ),
                     ],
                   ),
                 )
-
               ],
-            )
+            ),
+            Container(
+              margin: const EdgeInsets.only(top: 50.0),
+              child: Text(
+                '常用搜索',
+                style: TextStyle(fontSize: 16.0, color: Color(0xffb5b5b5)),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(30.0),
+              child: Row(
+                //对齐方式采用均匀对齐
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                //第一行搜索项
+                children: <Widget>[
+                  _getText('朋友'),
+                  _getText('聊天'),
+                  _getText('群组'),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left:30.0,right: 30.0,),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  //第二行搜索项
+                  _getText('Flutter'),
+                  _getText('Dart'),
+                  _getText('java'),
+                ],
+              ),
+            ),
           ],
         ),
       ),
