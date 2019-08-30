@@ -16,7 +16,7 @@ class MessagePage extends StatefulWidget {
           '哆啦A梦',
           '嗯呢',
           DateTime.now(),
-          MessageType().CHAT)
+          MessageType().CHAT),
     ];
 
     return messageData;
