@@ -102,7 +102,7 @@ class AppState extends State<App> {
                     position: RelativeRect.fromLTRB(500.0, 76.0, 10.0, 0.0),
                     //展示所有菜单项
                     items: <PopupMenuEntry>[
-                      _popupMenuItem('发起会话', imagePath: 'imgs/menu_group.png'),
+                      _popupMenuItem('发起会话', icon: Icons.chat),
                       _popupMenuItem('添加好友', imagePath: 'imgs/add_friend.png'),
                       _popupMenuItem('联系客服', icon: Icons.person),
                     ]);
@@ -138,16 +138,8 @@ class AppState extends State<App> {
               ),
               //判断当前索引图片切换显示
               icon: _currentIndex == 0
-                  ? Image.asset(
-                      'imgs/message_pressed',
-                      width: 32.0,
-                      height: 28.0,
-                    )
-                  : Image.asset(
-                      'imgs/message_normal.png',
-                      width: 32.0,
-                      height: 28.0,
-                    ),
+                  ? Icon(Icons.chat_bubble)
+                  : Icon(Icons.chat_bubble_outline),
             ),
             new BottomNavigationBarItem(
                 title: Text(
@@ -157,17 +149,9 @@ class AppState extends State<App> {
                           ? Color(0xFF46c01b)
                           : Color(0xff999999)),
                 ),
-                icon: _currentIndex == 0
-                    ? Image.asset(
-                        'imgs/contacts_fill',
-                        width: 32.0,
-                        height: 28.0,
-                      )
-                    : Image.asset(
-                        'imgs/contacts_line',
-                        width: 32.0,
-                        height: 28.0,
-                      )),
+                icon: _currentIndex == 1
+                    ? Icon(Icons.people)
+                    : Icon(Icons.people_outline)),
             new BottomNavigationBarItem(
                 title: Text(
                   '我的',
@@ -176,17 +160,9 @@ class AppState extends State<App> {
                           ? Color(0xFF46c01b)
                           : Color(0xff999999)),
                 ),
-                icon: _currentIndex == 1
-                    ? Image.asset(
-                        'imgs/profile_pressed.png',
-                        width: 32.0,
-                        height: 28.0,
-                      )
-                    : Image.asset(
-                        'imgs/profile_normal.png',
-                        width: 32.0,
-                        height: 28.0,
-                      ))
+                icon: _currentIndex == 2
+                    ? Icon(Icons.person)
+                    : Icon(Icons.person_outline))
           ]),
       body: currentPage(),
     );

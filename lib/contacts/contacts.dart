@@ -12,7 +12,7 @@ class Contacts extends StatefulWidget {
       new ContactVO(
           seationKey: "A",
           name: 'A钢筋锅',
-          avatarUrl: '/imgs/glg.png'
+          avatarUrl: 'imgs/glg.png'
       ),
       new ContactVO(
           seationKey: 'X',

@@ -66,6 +66,9 @@ flutter:
   - imgs/message_pressed.png
   - imgs/profile_pressed.png
   - imgs/public.png
+  - imgs/liumang.png
+  - imgs/gjg.png
+  - imgs/saner.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
