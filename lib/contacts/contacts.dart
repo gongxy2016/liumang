@@ -8,9 +8,9 @@ import './contact_vo.dart';
 class Contacts extends StatefulWidget {
   List<ContactVO> _setContactData() {
     List<ContactVO> contactData = [
-      new ContactVO(seationKey: "A", name: 'A钢筋锅', avatarUrl: 'imgs/glg.png'),
+      new ContactVO(seationKey: "A", name: 'A钢筋锅', avatarUrl: 'imgs/gjg.png'),
       new ContactVO(seationKey: 'X', name: '熊三', avatarUrl: 'imgs/saner.png'),
-      new ContactVO(seationKey: 'L', name: '流氓', avatarUrl: 'imgs/liumang.png')
+      new ContactVO(seationKey: 'L', name: '流氓', avatarUrl: 'imgs/liumang.png'),
     ];
     return contactData;
   }
@@ -50,6 +50,7 @@ class ContactsState extends State<Contacts> {
             //好友列表项
             child: ContactItem(
               item: contactData[index],
+              imgName: contactData[index].avatarUrl,
             ),
           );
         },
