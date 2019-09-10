@@ -23,7 +23,7 @@ class Personal extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.only(left: 12.0, right: 15.0),
                     child: Image.asset(
-                      'imgs/liumang.png',
+                      'imgs/gjg.png',
                       width: 70.0,
                       height: 70.0,
                     ),
@@ -35,12 +35,12 @@ class Personal extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
                         Text(
-                          '流氓',
+                          '钢筋锅',
                           style: TextStyle(
                               fontSize: 18.0, color: Color(0xFF353535)),
                         ),
                         Text(
-                          '账号 liumang',
+                          '账号 penggang',
                           style: TextStyle(
                               fontSize: 14.0, color: Color(0xFFa9a9a9)),
                         ),
