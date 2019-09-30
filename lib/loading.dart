@@ -24,7 +24,6 @@ class _LoadingState extends State<LoadingPage> {
     });
   }
 
-
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
