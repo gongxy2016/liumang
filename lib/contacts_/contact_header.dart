@@ -8,8 +8,8 @@ class ContactHeader extends StatelessWidget {
     // TODO: implement build
     return Column(
       children: <Widget>[
-        ContactItem(titleName: '添加好友',imgName: 'imgs/add_friend.png',),
-        ContactItem(titleName: '公共聊天室',imgName: 'imgs/groupchat.png',)
+        ContactItem(titleName: '添加好友',imgName: 'images/add_friend.png',),
+        ContactItem(titleName: '公共聊天室',imgName: 'images/groupchat.png',)
       ],
     );
   }

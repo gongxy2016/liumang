@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import './message_data.dart';
-import '../common/touch_callback.dart';
+import '../common_/touch_callback.dart';
 import 'package:date_format/date_format.dart';
 
 //聊天信息项

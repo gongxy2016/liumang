@@ -3,6 +3,7 @@ import './app.dart';
 import './loading.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import './search.dart';
+import './pages/home.dart';
 
 void main() =>
     runApp(MaterialApp(
@@ -21,7 +22,8 @@ void main() =>
           ),
           withZoom: true,
           withLocalStorage: true,
-        )
+        ),
+        "/home" : (BuildContext context) => new HomePage(),
       },
       //指定首页，默认为加载页面
       home: new LoadingPage(),

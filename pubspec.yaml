@@ -27,6 +27,8 @@ dependencies:
   json_serializable: ^3.0.0
   flutter_webview_plugin: ^0.3.7
   date_format: ^1.0.6
+  flutter_screenutil: ^0.6.0
+  dio: ^2.0.9
 
 dev_dependencies:
   flutter_test:
@@ -51,24 +53,26 @@ flutter:
   #  - images/a_dot_ham.jpeg
   assets:
   # 加载页面图片资源
-  - imgs/add_friend.png
-  - imgs/code.png
-  - imgs/contacts_fill.png
-  - imgs/contacts_line.png
-  - imgs/groupchat.png
-  - imgs/loading.png
-  - imgs/me_clear.png
-  - imgs/me_file.png
-  - imgs/me_friends.png
-  - imgs/me_message.png
-  - imgs/me_photo.png
-  - imgs/me_service.png
-  - imgs/message_pressed.png
-  - imgs/profile_pressed.png
-  - imgs/public.png
-  - imgs/liumang.png
-  - imgs/gjg.png
-  - imgs/saner.png
+  - images/add_friend.png
+  - images/code.png
+  - images/contacts_fill.png
+  - images/contacts_line.png
+  - images/groupchat.png
+  - images/loading.png
+  - images/me_clear.png
+  - images/me_file.png
+  - images/me_friends.png
+  - images/me_message.png
+  - images/me_photo.png
+  - images/me_service.png
+  - images/message_pressed.png
+  - images/profile_pressed.png
+  - images/public.png
+  - images/liumang.png
+  - images/gjg.png
+  - images/saner.png
+  - images/que.png
+  - images/que(1).png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

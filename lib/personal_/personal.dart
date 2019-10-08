@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../common/im_item.dart';
-import '../common/touch_callback.dart';
+import '../common_/im_item.dart';
+import '../common_/touch_callback.dart';
 
 class Personal extends StatelessWidget {
   @override
@@ -23,7 +23,7 @@ class Personal extends StatelessWidget {
                   Container(
                     margin: const EdgeInsets.only(left: 12.0, right: 15.0),
                     child: Image.asset(
-                      'imgs/gjg.png',
+                      'images/gjg.png',
                       width: 70.0,
                       height: 70.0,
                     ),
@@ -50,7 +50,7 @@ class Personal extends StatelessWidget {
                   //二维码图片显示
                   Container(
                     margin: const EdgeInsets.only(left: 12.0,right: 15.0),
-                    child: Image.asset('imgs/code.png',width: 24.0,height: 24.0,),
+                    child: Image.asset('images/code.png',width: 24.0,height: 24.0,),
                   ),
                 ],
               ),
@@ -61,7 +61,7 @@ class Personal extends StatelessWidget {
           Container(
             margin: const EdgeInsets.only(top: 20.0),
             color: Colors.white,
-            child: ImItem(title: '好友动态',imagePath: 'imgs/me_friends.png',),
+            child: ImItem(title: '好友动态',imagePath: 'images/me_friends.png',),
           ),
           Container(
             margin: const EdgeInsets.only(top: 20.0),
@@ -69,7 +69,7 @@ class Personal extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 ImItem(
-                  imagePath: 'imgs/me_message.png',
+                  imagePath: 'images/me_message.png',
                   title: '消息管理',
                 ),
                 Padding(
@@ -80,7 +80,7 @@ class Personal extends StatelessWidget {
                   ),
                 ),
                 ImItem(
-                  imagePath: 'imgs/me_photo.png',
+                  imagePath: 'images/me_photo.png',
                   title: '我的相册',
                 ),
                 Padding(
@@ -91,7 +91,7 @@ class Personal extends StatelessWidget {
                   ),
                 ),
                 ImItem(
-                  imagePath: 'imgs/me_file.png',
+                  imagePath: 'images/me_file.png',
                   title: '我的文件',
                 ),
                 Padding(
@@ -102,7 +102,7 @@ class Personal extends StatelessWidget {
                   ),
                 ),
                 ImItem(
-                  imagePath: 'imgs/me_service.png',
+                  imagePath: 'images/me_service.png',
                   title: '联系客服',
                 ),
               ],
@@ -111,7 +111,7 @@ class Personal extends StatelessWidget {
           Container(
             margin: const EdgeInsets.only(top: 20.0),
             color: Colors.white,
-            child: ImItem(title: '清理缓存',imagePath: 'imgs/me_clear.png',),
+            child: ImItem(title: '清理缓存',imagePath: 'images/me_clear.png',),
           ),
         ],
       ),

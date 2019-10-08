@@ -19,7 +19,7 @@ class _LoadingState extends State<LoadingPage> {
 
     //在加载页面停顿2秒
     new Future.delayed(Duration(seconds: 3),(){
-      print('Flutter即时通讯app界面实现');
+      print('垃圾分类');
       Navigator.of(context).pushReplacementNamed('app');
     });
   }
@@ -27,14 +27,10 @@ class _LoadingState extends State<LoadingPage> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return new Center(
-      child: Stack(
-        children: <Widget>[
-          //加载页面居中背景图，使用cover模式
-          Image.asset('imgs/loading.png',fit: BoxFit.cover,),
-        ],
-      ),
+    return new Scaffold(
+      body: MaterialApp(
+        home: Image.asset('images/loading.png',fit: BoxFit.fill),
+      )
     );
   }
-
 }

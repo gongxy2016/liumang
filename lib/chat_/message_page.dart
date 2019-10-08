@@ -6,19 +6,19 @@ class MessagePage extends StatefulWidget {
   List<MessageData> _setMessageData() {
     List<MessageData> messageData = [
       new MessageData(
-          'imgs/saner.png',
+          'images/saner.png',
           '灰灰',
           "灰灰你在哪里",
           DateTime.now(),
           MessageType().CHAT),
       new MessageData(
-          'imgs/gjg.png',
+          'images/gjg.png',
           '刚儿',
           '嗯呢',
           DateTime.now(),
           MessageType().CHAT),
       new MessageData(
-          'imgs/liumang.png',
+          'images/liumang.png',
           '凡儿',
           '红树林搞起',
           DateTime.now(),

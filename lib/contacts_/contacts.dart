@@ -8,9 +8,9 @@ import './contact_vo.dart';
 class Contacts extends StatefulWidget {
   List<ContactVO> _setContactData() {
     List<ContactVO> contactData = [
-      new ContactVO(seationKey: "A", name: 'A钢筋锅', avatarUrl: 'imgs/gjg.png'),
-      new ContactVO(seationKey: 'X', name: '熊三', avatarUrl: 'imgs/saner.png'),
-      new ContactVO(seationKey: 'L', name: '流氓', avatarUrl: 'imgs/liumang.png'),
+      new ContactVO(seationKey: "A", name: 'A钢筋锅', avatarUrl: 'images/gjg.png'),
+      new ContactVO(seationKey: 'X', name: '熊三', avatarUrl: 'images/saner.png'),
+      new ContactVO(seationKey: 'L', name: '流氓', avatarUrl: 'images/liumang.png'),
     ];
     return contactData;
   }
