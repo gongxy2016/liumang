@@ -29,6 +29,7 @@ class _LoadingState extends State<LoadingPage> {
     // TODO: implement build
     return new Scaffold(
       body: MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Image.asset('images/loading.png',fit: BoxFit.fill),
       )
     );

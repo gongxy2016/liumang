@@ -61,7 +61,7 @@ class AppState extends State<App> {
     //弹框标题
     Widget dialogTitle() {
       return Center(
-        child: Text('温馨提示',style: TextStyle(color: Colors.green),),
+        child: Text('亲爱的小哥哥',style: TextStyle(color: Colors.green),),
       );
     }
 
