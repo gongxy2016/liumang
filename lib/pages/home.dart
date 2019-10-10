@@ -6,6 +6,7 @@ import '../interf/on_home_search_listener.dart';
 import '../bean/bean_home_search.dart';
 import 'package:json_serializable/json_serializable.dart';
 import '../widgets/home_intro.dart';
+import 'dart:convert';
 
 class HomePage extends StatefulWidget {
   @override
@@ -56,6 +57,9 @@ class _HomePageState extends State<HomePage> implements OnHomeSearchListener{
       for(int i = 0;i < resultList.length;i++) {
         text0 += resultList[i].itemName+" : "+resultList[i].itemCategory+"\n";
       }*/
+      var data = json.decode(val.toString());
+      HomeSearchBean list = HomeSearchBean.fromJson(data);
+      list.result.forEach((item) => print(item.itemName+' : '+item.itemCategory));
 //      print('重绘page text0 = '+text0);
     });
   }
