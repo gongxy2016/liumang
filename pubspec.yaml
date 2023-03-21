@@ -28,7 +28,7 @@ dependencies:
   flutter_webview_plugin: ^0.3.7
   date_format: ^1.0.6
   flutter_screenutil: ^0.6.0
-  dio: ^3.0.3
+  dio: ">=3.0.3 <6.0.0"
 
 dev_dependencies:
   flutter_test:
